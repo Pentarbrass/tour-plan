@@ -8,6 +8,9 @@
                 width: 100%
                 height: 100%
                 object-fit: cover
+    .card
+        width: 230px
+        height: 230px
 
 @media (max-width: 992px)
     .container
@@ -46,6 +49,16 @@
         &-slider
             &__item
                 max-width: 580px
+    .activities
+        &-wrapper
+            flex-wrap: wrap
+        &__card
+            margin-bottom: 20px
+    .card
+        width: 340px
+        height: 255px
+        &__title
+            margin-left: 0
 
 @media (max-width: 768px)
     .container
@@ -122,6 +135,11 @@
         &__title
             font-size: 30px
             line-height: 38px
+    .activities
+        padding: 40px 0 60px
+    .card
+        width: 49%
+        height: 255px
 
 @media (max-width: 576px)
     .logo
@@ -142,3 +160,5 @@
             margin-bottom: 42px
             font-size: 18px
             line-height: 23px
+    .card
+        width: 100%
