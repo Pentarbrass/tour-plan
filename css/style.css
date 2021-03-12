@@ -1420,8 +1420,9 @@ template {
     height: 255px;
   }
   .packages__wrapper {
-    grid-template: repeat(2, 1fr)/1fr;
+    grid-template: repeat(5, 1fr)/650px;
     max-width: 700px;
+    justify-content: center;
   }
   .packages__double-card {
     display: none;
