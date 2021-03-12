@@ -1428,30 +1428,24 @@ template {
     display: none;
   }
   .packages__card {
-    max-width: 650px;
+    max-width: 700px;
     grid-column: 1 / 2;
   }
   .packages__card:nth-child(odd) {
-    justify-self: center;
+    justify-self: start;
   }
   .packages__card:nth-child(even) {
-    justify-self: center;
+    justify-self: start;
   }
   .packages__offer {
-    max-width: 650px;
+    max-width: 700px;
   }
   .packages__info {
-    max-width: 650px;
+    max-width: 700px;
   }
   .double-card {
     display: block;
-    max-width: 650px;
-  }
-  .offer-info__text {
-    display: none;
-  }
-  .offer-card__image {
-    height: 70%;
+    max-width: 700px;
   }
 }
 
