@@ -181,25 +181,26 @@
         height: 255px
     .packages
         &__wrapper
-            grid-template: repeat(5, 1fr) / 1fr
+            grid-template: repeat(3, 1fr) / repeat(2, 1fr)
             max-width: 700px
             justify-content: center
         &__double-card
             display: none
         &__card
-            max-width: 700px
-            grid-column: 1 / 2
+            max-width: 350px
         &__card:nth-child(odd)
             justify-self: start
         &__card:nth-child(even)
             justify-self: start
         &__offer
-            max-width: 700px
+            max-width: 350px
         &__info
-            max-width: 700px
+            max-width: 350px
+        &__new-pricetag
+            font-size: 20px
     .double-card
         display: block
-        max-width: 700px
+        max-width: 350px
 
 @media (max-width: 576px)
     .logo
@@ -222,8 +223,20 @@
             line-height: 23px
     .card
         width: 100%
+        grid-column: 1 / 2
     .packages
+        &__wrapper
+            grid-template: repeat(3, 1fr) / 1fr
+            justify-content: center
         &__title
             font-size: 25px
             line-height: 35px
             margin: 0 0 45px
+        &__new-pricetag
+            font-size: 22px
+        &__card:nth-child(odd)
+            justify-self: center
+        &__card:nth-child(even)
+            justify-self: center
+    .double-card
+        justify-self: center

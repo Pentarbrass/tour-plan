@@ -842,7 +842,7 @@ template {
 }
 
 .packages__price-button {
-  padding: 11px 26px;
+  padding: 11px 0;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -1420,7 +1420,7 @@ template {
     height: 255px;
   }
   .packages__wrapper {
-    grid-template: repeat(5, 1fr)/1fr;
+    grid-template: repeat(3, 1fr)/repeat(2, 1fr);
     max-width: 700px;
     justify-content: center;
   }
@@ -1428,8 +1428,7 @@ template {
     display: none;
   }
   .packages__card {
-    max-width: 700px;
-    grid-column: 1 / 2;
+    max-width: 350px;
   }
   .packages__card:nth-child(odd) {
     justify-self: start;
@@ -1438,14 +1437,17 @@ template {
     justify-self: start;
   }
   .packages__offer {
-    max-width: 700px;
+    max-width: 350px;
   }
   .packages__info {
-    max-width: 700px;
+    max-width: 350px;
+  }
+  .packages__new-pricetag {
+    font-size: 20px;
   }
   .double-card {
     display: block;
-    max-width: 700px;
+    max-width: 350px;
   }
 }
 
@@ -1475,11 +1477,28 @@ template {
   }
   .card {
     width: 100%;
+    grid-column: 1 / 2;
+  }
+  .packages__wrapper {
+    grid-template: repeat(3, 1fr)/1fr;
+    justify-content: center;
   }
   .packages__title {
     font-size: 25px;
     line-height: 35px;
     margin: 0 0 45px;
+  }
+  .packages__new-pricetag {
+    font-size: 22px;
+  }
+  .packages__card:nth-child(odd) {
+    justify-self: center;
+  }
+  .packages__card:nth-child(even) {
+    justify-self: center;
+  }
+  .double-card {
+    justify-self: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
