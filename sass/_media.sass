@@ -175,22 +175,21 @@
         height: 255px
     .packages
         &__wrapper
-            grid-template: repeat(3, 1fr) / repeat(2, 1fr)
-            max-width: 700px
+            grid-template: repeat(3, 1fr) / minmax(200px, 500px)
             justify-content: center
         &__double-card
             display: none
         &__card
-            max-width: 350px
+            max-width: 500px
         &__offer
-            max-width: 350px
+            max-width: 500px
         &__info
-            max-width: 350px
+            max-width: 500px
         &__new-pricetag
             font-size: 20px
     .double-card
         display: block
-        max-width: 350px
+        max-width: 500px
 
 @media (max-width: 576px)
     .logo

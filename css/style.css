@@ -1410,28 +1410,27 @@ template {
     height: 255px;
   }
   .packages__wrapper {
-    grid-template: repeat(3, 1fr)/repeat(2, 1fr);
-    max-width: 700px;
+    grid-template: repeat(3, 1fr)/minmax(200px, 500px);
     justify-content: center;
   }
   .packages__double-card {
     display: none;
   }
   .packages__card {
-    max-width: 350px;
+    max-width: 500px;
   }
   .packages__offer {
-    max-width: 350px;
+    max-width: 500px;
   }
   .packages__info {
-    max-width: 350px;
+    max-width: 500px;
   }
   .packages__new-pricetag {
     font-size: 20px;
   }
   .double-card {
     display: block;
-    max-width: 350px;
+    max-width: 500px;
   }
 }
 
