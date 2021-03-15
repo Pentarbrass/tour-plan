@@ -70,28 +70,13 @@
             column-gap: 5px
             grid-row-gap: 15px
         &__double-card
-            width: 700px
-            height: 415px
-        &__card
-            height: 415px
-        &__offer
-            height: 186px
+            max-width: 700px
         &__double-price
             margin-top: 17px
         &__info
             padding: 18px 15px 20px 22px
-            height: 230px
     .offer-card
         width: 100%
-        height: 415px
-        &__image
-            height: 415px
-    .offer-info
-        padding: 26px 12px 15px 20px
-        &__title
-            margin-bottom: 17px
-        &__text
-            margin-bottom: 15px
 
 @media (max-width: 768px)
     .container
@@ -175,21 +160,25 @@
         height: 255px
     .packages
         &__wrapper
-            grid-template: repeat(3, 1fr) / minmax(200px, 500px)
+            grid-template: repeat(3, 1fr) / minmax(200px, 600px)
             justify-content: center
         &__double-card
-            display: none
+            max-width: 600px
         &__card
-            max-width: 500px
+            grid-column: span 2
+            max-width: 600px
         &__offer
-            max-width: 500px
+            max-width: 600px
         &__info
-            max-width: 500px
+            max-width: 600px
         &__new-pricetag
             font-size: 20px
-    .double-card
-        display: block
-        max-width: 500px
+    .offer-info
+        padding: 26px 12px 15px 20px
+        &__title
+            margin-bottom: 17px
+        &__text
+            margin-bottom: 15px
 
 @media (max-width: 576px)
     .logo
@@ -215,7 +204,7 @@
         grid-column: 1 / 2
     .packages
         &__wrapper
-            grid-template: repeat(3, 1fr) / minmax(200px, 350px)
+            grid-template: minmax(200px, 670px) / minmax(200px, 800px)
             justify-content: center
         &__title
             font-size: 25px
@@ -223,3 +212,10 @@
             margin: 0 0 45px
         &__new-pricetag
             font-size: 22px
+        &__double-card
+            display: none
+        &__info
+            min-height: 650px
+    .double-card
+        display: block
+        grid-column: span 2
