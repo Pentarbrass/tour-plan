@@ -1525,7 +1525,7 @@ template {
   body {
     padding-top: 78px;
   }
-  .navbar__mobile--fixed {
+  .navbar--mobile--fixed {
     position: fixed;
     top: 0;
     left: 0;
