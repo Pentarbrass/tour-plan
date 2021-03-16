@@ -108,14 +108,48 @@
                 grid-column: span 5
         &__rights
             grid-column: 1 / 7
+            margin: 26px 0 0 0
 
 @media (max-width: 768px)
     .container
         max-width: 700px
         width: 92%
+    body
+        padding-top: 78px
     .navbar
-        &-menu, &__search, &__user
+        &__mobile
+            &--fixed
+                position: fixed
+                top: 0
+                left: 0
+                right: 0
+                z-index: 99
+        &__search, &__user
+            &--mobile
+                &--hidden
+                    display: none
+                &--visible
+                    display: flex
+        &__user
+            flex-direction: column
+            justify-content: center
+        &-bottom
             display: none
+            position: fixed
+            top: 78px
+            left: 0
+            right: 0
+            bottom: 0
+            padding-top: 30px
+            &--visible
+                display: block
+        &-menu
+            flex-direction: column
+            &__item
+                margin-bottom: 20px
+                &--mobile
+                    &--visible
+                        display: block
     .menu
         &-button
             width: 16px
@@ -132,6 +166,12 @@
                 width: 16px
                 height: 1px
                 background-color: $text-color
+    .user
+        &__name
+            &--light
+                color: $light
+                margin-top: 10px
+                margin-left: 0
     .stars
         flex-basis: auto
     .hotel
