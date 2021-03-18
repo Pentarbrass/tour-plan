@@ -40,7 +40,7 @@ try {
 
     // Настройки вашей почты
     $mail->Host       = 'smtp.ukr.net'; // SMTP сервера вашей почты
-    $mail->Username   = 'depofinn@ukr.net'; // Логин на почте
+    $mail->Username   = ''; // Логин на почте
     $mail->Password   = ''; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
