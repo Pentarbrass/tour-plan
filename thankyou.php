@@ -114,14 +114,15 @@
                             else echo 'Спасибо за подписку!'
                             ?>
                         </h1>
-
                     </div>
-
                     <p class="hotel-description hotel-info__description">
                         <?php
                         if ($_GET['type'] == 'message') echo 'Наш менеджер позвонит Вам через 5 минут!';
                         ?>
                     </p>
+                    <button class="home-button">
+                        <a class="footer__link" href="index.html">Return to main</a>
+                    </button>
                 </div>
                 <!-- /.hotel-info__text -->
             </div>
