@@ -8,16 +8,24 @@ require 'phpmailer/Exception.php';
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
+$email = $_POST['email'];
 
 
 // Формирование самого письма
 $title = "Новое обращение Best Tour Plan";
 $body = "
-<h2>Новое j,hfotybt</h2>
+<h2>Новое обращение</h2>
 <b>Имя:</b> $name<br>
 <b>Телефон:</b> $phone<br><br>
 <b>Сообщение:</b><br>$message
 ";
+// Отправка адреса для подписки
+$titleMail = "Новая подписка Best Tour Plan";
+$bodyMail = "
+<h2>У нас новый подписчик!</h2>
+<b>Email:</b> $email<br>
+";
+
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -43,12 +51,22 @@ try {
 
     // Отправка сообщения
     $mail->isHTML(true);
-    $mail->Subject = $title;
-    $mail->Body = $body;
+    if ($phone) {
+        $mail->Subject = $title;
+        $mail->Body = $body;
+        $typePhone = 'message';
+    } else {
+        $mail->Subject = $titleMail;
+        $mail->Body = $bodyMail;
+        $typePhone = 'email';
+    }
+
 
     // Проверяем отравленность сообщения
     if ($mail->send()) {
         $result = "success";
+        // Отображение результата
+        header('Location: thankyou.php' . '?type=' . $typePhone);
     } else {
         $result = "error";
     }
@@ -56,6 +74,3 @@ try {
     $result = "error";
     $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
 }
-
-// Отображение результата
-header('Location: thankyou.html');

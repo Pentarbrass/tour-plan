@@ -6,9 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
     <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
     </script> -->
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
@@ -110,11 +108,20 @@
             <div class="hotel-info">
                 <div class="hotel-info__text">
                     <div class="hotel-wrapper">
-                        <h1 class="hotel-name hotel-info__name">Сообщение отправлено!</h1>
-                        
+                        <h1 class="hotel-name hotel-info__name">
+                            <?php
+                            if ($_GET['type'] == 'message') echo 'Сообщение отправлено!';
+                            else echo 'Спасибо за подписку!'
+                            ?>
+                        </h1>
+
                     </div>
+
                     <p class="hotel-description hotel-info__description">
-                    Наш менеджер позвонит вам через 5 минут!</p>
+                        <?php
+                        if ($_GET['type'] == 'message') echo 'Наш менеджер позвонит Вам через 5 минут!';
+                        ?>
+                    </p>
                 </div>
                 <!-- /.hotel-info__text -->
             </div>
@@ -179,20 +186,17 @@
                     <p class="footer__text">Feel free to contact us by phone, email or by our contact form</p>
                     <ul class="footer__ul">
                         <li class="footer__item footer__item--mb-2">
-                            <div class="footer__icon-wrapper"><img class="footer__icon" src="img/map-mark.svg"
-                                    alt="Icon: Map"></div>
+                            <div class="footer__icon-wrapper"><img class="footer__icon" src="img/map-mark.svg" alt="Icon: Map"></div>
                             9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States
                         </li>
                         <li class="footer__item footer__item--mb-2">
-                            <div class="footer__icon-wrapper"><img class="footer__icon" src="img/contact-phone-call.svg"
-                                    alt="Icon: Phone"></div>
+                            <div class="footer__icon-wrapper"><img class="footer__icon" src="img/contact-phone-call.svg" alt="Icon: Phone"></div>
                             Tel (business hours) : 269 1500 <br>
                             Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm) <br>
                             Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
                         </li>
                         <li class="footer__item footer__item--mb-2">
-                            <div class="footer__icon-wrapper"><img class="footer__icon" src="img/email.svg"
-                                    alt="Icon: Email"></div>
+                            <div class="footer__icon-wrapper"><img class="footer__icon" src="img/email.svg" alt="Icon: Email"></div>
                             cherly.lawson@example.com
                         </li>
 
@@ -221,8 +225,7 @@
                         <li class="footer__item footer__rights-item"><a href="#" class="footer__link">Cancellation
                                 policy</a></li>
                     </ul>
-                    <a href="" class="footer__pay-link"><img src="img/footer-pay.png" alt="Icon: Payment servises"
-                            class="footer__icon"></a>
+                    <a href="" class="footer__pay-link"><img src="img/footer-pay.png" alt="Icon: Payment servises" class="footer__icon"></a>
 
                 </div>
             </div>
