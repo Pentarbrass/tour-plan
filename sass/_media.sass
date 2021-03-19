@@ -109,6 +109,13 @@
         &__rights
             grid-column: 1 / 7
             margin: 26px 0 0 0
+    .modal
+        &__form
+            &-sender
+                flex-direction: column-reverse
+                align-items: start
+        &__info
+            margin-bottom: 10px
 
 @media (max-width: 768px)
     .container
@@ -253,6 +260,9 @@
     .footer
         &__input
             flex-basis: 100%
+    .modal
+        &__dialog
+            padding: 33px 33px
 
 @media (max-width: 576px)
     .logo
@@ -342,3 +352,6 @@
             &-item
                 font-size: 11.5px
                 line-height: 12px
+    .modal
+        &__dialog
+            width: 100%

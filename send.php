@@ -44,10 +44,10 @@ try {
     $mail->Password   = ''; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('depofinn@ukr.net', 'DepOfInn'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('', 'DepOfInn'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('helset89@yandex.ru');
+    $mail->addAddress('');
 
     // Отправка сообщения
     $mail->isHTML(true);
