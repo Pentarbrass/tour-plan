@@ -1435,6 +1435,12 @@ template {
   padding: 0 15px 0 0;
 }
 
+.footer__group-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .modal__overlay {
   position: fixed;
   top: 0;
@@ -1552,6 +1558,9 @@ template {
   .footer__rights {
     grid-column: 1 / 5;
   }
+  .footer__group-wrapper {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1662,6 +1671,9 @@ template {
   .footer__rights {
     grid-column: 1 / 7;
     margin: 26px 0 0 0;
+  }
+  .footer__group-wrapper {
+    flex-direction: row;
   }
   .modal__form-sender {
     flex-direction: column-reverse;
@@ -1846,6 +1858,9 @@ template {
   .footer__input-group {
     flex-basis: 100%;
   }
+  .footer__group-wrapper {
+    flex-direction: column;
+  }
   .modal__dialog {
     padding: 33px 33px;
   }
@@ -1872,6 +1887,9 @@ template {
   }
   .subscribe {
     width: 100%;
+  }
+  .subscribe__wrapper {
+    width: 90%;
   }
   .reviews__title {
     margin-bottom: 42px;
