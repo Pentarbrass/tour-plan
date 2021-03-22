@@ -1855,9 +1855,6 @@ template {
   .offer-info__title {
     margin-bottom: 17px;
   }
-  .footer__input-group {
-    flex-basis: 100%;
-  }
   .footer__group-wrapper {
     flex-direction: column;
   }
