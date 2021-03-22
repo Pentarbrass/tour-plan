@@ -12,17 +12,17 @@ $email = $_POST['email'];
 
 
 // Формирование самого письма
-$title = "Новое обращение Best Tour Plan";
+$title = "New message Best Tour Plan";
 $body = "
-<h2>Новое обращение</h2>
-<b>Имя:</b> $name<br>
-<b>Телефон:</b> $phone<br><br>
-<b>Сообщение:</b><br>$message
+<h2>New message</h2>
+<b>Name:</b> $name<br>
+<b>Phone:</b> $phone<br><br>
+<b>Message:</b><br>$message
 ";
 // Отправка адреса для подписки
-$titleMail = "Новая подписка Best Tour Plan";
+$titleMail = "New subscriber Best Tour Plan";
 $bodyMail = "
-<h2>У нас новый подписчик!</h2>
+<h2>We`ve got a new subscriber!</h2>
 <b>Email:</b> $email<br>
 ";
 

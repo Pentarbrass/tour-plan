@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
     <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
@@ -18,7 +23,7 @@
     <header class="navbar navbar--mobile--fixed">
         <div class="container">
             <div class="navbar-top">
-                <a href="#" class="logo">
+                <a href="index.html" class="logo">
                     <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image">
                 </a>
 
@@ -110,14 +115,14 @@
                     <div class="hotel-wrapper">
                         <h1 class="hotel-name hotel-info__name">
                             <?php
-                            if ($_GET['type'] == 'message') echo 'Сообщение отправлено!';
-                            else echo 'Спасибо за подписку!'
+                            if ($_GET['type'] == 'message') echo 'Your message was delivered!';
+                            else echo 'Thank you for subscribing!'
                             ?>
                         </h1>
                     </div>
                     <p class="hotel-description hotel-info__description">
                         <?php
-                        if ($_GET['type'] == 'message') echo 'Наш менеджер позвонит Вам через 5 минут!';
+                        if ($_GET['type'] == 'message') echo 'Our manager will contact you!';
                         ?>
                     </p>
                     <button class="home-button">
