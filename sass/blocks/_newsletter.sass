@@ -35,18 +35,22 @@
         line-height: 45px
         text-transform: uppercase
 .subscribe
-    position: relative
+
     width: 350px
     height: 55px
     border-radius: 4px
     overflow: hidden
-    &__input
+    &__wrapper
         position: absolute
+        width: 350px
+        height: 55px
+    &__input
         width: 100%
         height: 100%
         padding-left: 33px
         padding-right: 75px
         border: none
+        border-radius: 0 4px 4px 0
         font-weight: 300
         font-size: 14px
         line-height: 18px
@@ -59,6 +63,7 @@
         height: 100%
         border: none
         outline: none
+        border-radius: 0 4px 4px 0
         background-color: $primary
         color: $light
         cursor: pointer

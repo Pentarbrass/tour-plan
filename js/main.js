@@ -59,6 +59,30 @@ menuButton.on('click', function () {
         modalDialog.removeClass('modal__dialog--visible');
     }
   });
+//Обработка форм
+  $('.valid-form').each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+    messages: {
+      name: {
+        required: "Please specify your name",
+        minlength: "Sorry, but your name is to short"
+      },
+      email: {
+        required: "We need your email address to contact you",
+        email: "Your email address must be in the format of name@domain.com"
+      },
+      phone: {
+        required: "Please, enter your phone number",
+        minlength: "Sorry, but your phone is to short"
+      },
+      }
+  });
+  });
+//Настройка маски
+  $(document).ready(function () {
+    $('.phone_with_ddd').mask('+7 (999) 999-99-99');
+  });
 });
 
 
