@@ -741,8 +741,8 @@
                 <h3 class="modal__title modal__title--mb-3">Send us a message</h3>
                 <form action="send.php" method="POST" class="modal__form valid-form">
                     <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2">
-                    <input type="text" class="input modal__input phone-with-ddd" placeholder="Phone Number*" name="phone" required>
-                    <input type="text" class="input modal__input" placeholder="Email*" name="email" required>
+                    <input type="tel" class="input modal__input phone-with-ddd" placeholder="Phone Number*" name="phone" required>
+                    <input type="email" class="input modal__input" placeholder="Email*" name="email" required>
                     <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
                     <div class="modal__form-sender">
                         <button class="button modal__button" type="submit">Send</button>
