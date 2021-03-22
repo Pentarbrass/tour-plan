@@ -81,7 +81,7 @@ menuButton.on('click', function () {
   });
 //Настройка маски
   $(document).ready(function () {
-    $('.phone_with_ddd').mask('+7 (999) 999-99-99');
+    $('.phone-with-ddd').mask('+7 (999) 999-99-99');
   });
 });
 
