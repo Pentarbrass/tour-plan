@@ -83,6 +83,7 @@ menuButton.on('click', function () {
   $(document).ready(function () {
     $('.phone-with-ddd').mask('+7 (999) 999-99-99');
   });
+  AOS.init();
 });
 
 
